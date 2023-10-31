@@ -122,12 +122,24 @@
   }
 
   .details {
-    flex-direction: column;
+    /* background-color: red;
+    width: 200px; */
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
   }
 
   .col {
-    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+  }
+  .col img {
+    height: 30px;
+    margin-bottom: 15px;
+  }
+
+  .col p {
+    text-align: center;
+    font-size: 15px;
   }
 }
