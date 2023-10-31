@@ -1,0 +1,128 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#title {
+  text-align: center;
+  background-color: #4d4d4c;
+  font-family: monospace;
+  width: 36%;
+  padding: 12px;
+  border-radius: 11px;
+  font-size: xxx-large;
+  margin: auto;
+  margin-top: 15px;
+  color: rgb(255, 255, 255);
+}
+
+#subTitle {
+  color: #4d4d4c;
+  text-align: center;
+  font-size: 18px;
+  margin-top: 20px;
+  font-family: monospace;
+}
+body {
+  font-family: Arial, sans-serif;
+  background-color: #e7e5e5;
+}
+
+.project-section {
+  padding-top: 70px;
+  display: flex;
+  flex-wrap: wrap;
+  width: 95%;
+  margin: auto;
+}
+
+.project-card {
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 1rem;
+  width: 30%;
+  background-color: white;
+}
+
+.project-details {
+  margin-left: 12px;
+  margin-right: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 30px;
+}
+.project-image img {
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.project-tech {
+  font-size: 12px;
+  font-weight: 500;
+  color: #888;
+  margin-bottom: 5px;
+}
+
+.project-title {
+  font-weight: 600;
+  /* font-family: monospace; */
+  color: rgb(34, 34, 34);
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  margin-bottom: 0.75rem;
+}
+
+.project-description {
+  margin-bottom: 10px;
+}
+
+.project-links a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: 0;
+  border-radius: 5px;
+  margin-right: 10px;
+  background-color: #7747ff;
+  color: #fff;
+}
+
+.project-links a:hover {
+  background-color: #663dd8;
+  color: #fff;
+}
+
+@media screen and (max-width: 768px) {
+  #subTitle {
+    font-size: 15px;
+  }
+  #title {
+    width: 80%;
+    font-size: 30px;
+  }
+  .project-section {
+    flex-direction: column;
+  }
+  .project-card {
+    width: 90%;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 800px) {
+  #title {
+    width: 50%;
+    font-size: 30px;
+  }
+  .project-section {
+    margin: auto;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .project-card {
+    width: 40%;
+  }
+}
