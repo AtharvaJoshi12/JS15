@@ -55,6 +55,45 @@
             selected = null;
           });
         });
+
+        // Add touch events for mobile devices
+        list.addEventListener("touchstart", function (e) {
+          selected = e.target;
+        });
+
+        list.addEventListener("touchmove", function (e) {
+          if (selected) {
+            e.preventDefault(); // Prevent default touchmove behavior
+          }
+        });
+
+        list.addEventListener("touchend", function (e) {
+          if (selected) {
+            // Determine the drop target based on the touch end position
+            const touchX = e.changedTouches[0].clientX;
+            const touchY = e.changedTouches[0].clientY;
+            const leftBoxRect = leftBox.getBoundingClientRect();
+            const rightBoxRect = rightBox.getBoundingClientRect();
+
+            if (
+              touchX >= leftBoxRect.left &&
+              touchX <= leftBoxRect.right &&
+              touchY >= leftBoxRect.top &&
+              touchY <= leftBoxRect.bottom
+            ) {
+              leftBox.appendChild(selected);
+            } else if (
+              touchX >= rightBoxRect.left &&
+              touchX <= rightBoxRect.right &&
+              touchY >= rightBoxRect.top &&
+              touchY <= rightBoxRect.bottom
+            ) {
+              rightBox.appendChild(selected);
+            }
+
+            selected = null;
+          }
+        });
       }
     </script>
   </body>
