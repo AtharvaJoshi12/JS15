@@ -34,6 +34,7 @@ body {
   flex-wrap: wrap;
   width: 95%;
   margin: auto;
+  max-width: 1230px;
 }
 
 .project-card {
