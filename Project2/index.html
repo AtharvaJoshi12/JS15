@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Text To Speech Converter</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon" />
   </head>
   <body>
     <div class="hero">
@@ -15,10 +16,23 @@
         <button><img src="images/play.png" alt="" srcset="" /> Listen</button>
       </div>
       <div class="secondRow">
-        <button id="stop">Stop</button>
-        <button id="resume">Resume</button>
+        <button id="pauseResumeBtn">Pause</button>
+        <button id="end">End</button>
+        <!-- <button id="speedButton"></button> -->
+        <div class="speed-control">
+          <select id="speed-select">
+            <option value="0.5">0.25x</option>
+            <option value="0.5">0.5x</option>
+            <option value="1" selected>Normal</option>
+            <option value="1.5">1.5x</option>
+            <option value="2">2x</option>
+          </select>
+        </div>
       </div>
     </div>
+    <h1 id="error">
+      This app is not available for your device. Please use it on Desktop
+    </h1>
     <script src="index.js"></script>
   </body>
 </html>
