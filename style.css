@@ -99,6 +99,7 @@ body {
 @media screen and (max-width: 768px) {
   #subTitle {
     font-size: 15px;
+    padding: 20px;
   }
   #title {
     width: 80%;
