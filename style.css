@@ -87,12 +87,12 @@ body {
   border: 0;
   border-radius: 5px;
   margin-right: 10px;
-  background-color: #7747ff;
+  background: #490d61;
   color: #fff;
 }
 
 .project-links a:hover {
-  background-color: #663dd8;
+  background: #631283;
   color: #fff;
 }
 
