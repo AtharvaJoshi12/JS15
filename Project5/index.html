@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon" />
+    <title>Drag & Drop App</title>
+  </head>
+  <body>
+    <div id="left">
+      <h3>Desktop 1</h3>
+      <div id="leftBox" class="inner">
+        <div class="list" draggable="true">
+          Tab 1 <img src="images/t1.png" draggable="false" alt="" />
+        </div>
+        <div class="list" draggable="true">
+          Tab 2 <img src="images/t2.png" draggable="false" alt="" />
+        </div>
+        <div class="list" draggable="true">
+          Tab 3 <img src="images/t3.png" draggable="false" alt="" />
+        </div>
+        <div class="list" draggable="true">
+          Tab 4 <img src="images/t4.png" draggable="false" alt="" />
+        </div>
+      </div>
+    </div>
+    <div id="right">
+      <h3>Desktop 2</h3>
+      <div id="rightBox" class="inner"></div>
+    </div>
+
+    <script>
+      let lists = document.getElementsByClassName("list");
+      let leftBox = document.getElementById("leftBox");
+      let rightBox = document.getElementById("rightBox");
+
+      for (list of lists) {
+        list.addEventListener("dragstart", function (e) {
+          let selected = e.target;
+
+          rightBox.addEventListener("dragover", function (e) {
+            e.preventDefault();
+          });
+          rightBox.addEventListener("drop", function (e) {
+            rightBox.appendChild(selected);
+            selected = null;
+          });
+
+          leftBox.addEventListener("dragover", function (e) {
+            e.preventDefault();
+          });
+          leftBox.addEventListener("drop", function (e) {
+            leftBox.appendChild(selected);
+            selected = null;
+          });
+        });
+      }
+    </script>
+  </body>
+</html>
