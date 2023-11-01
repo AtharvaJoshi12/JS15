@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Notifications App</title>
+    <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="buttons">
+      <button id="success" onclick="showNotification('✅ Success')">
+        Success
+      </button>
+      <button id="error" onclick="showNotification('❌ Error')">Error</button>
+      <button id="warning" onclick="showNotification('⚠️ Warning')">
+        Warning
+      </button>
+    </div>
+
+    <div id="notificationBox"></div>
+    <script>
+      let notificationBox = document.querySelector("#notificationBox");
+      function showNotification(message) {
+        let notification = document.createElement("div");
+        notification.classList.add("notification");
+        notification.innerHTML = message;
+        notificationBox.appendChild(notification);
+
+        document.title = `Notification - ${message}`;
+
+        setTimeout(() => {
+          notification.remove();
+        }, 3000);
+      }
+    </script>
+  </body>
+</html>
