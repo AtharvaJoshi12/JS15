@@ -13,7 +13,7 @@ Below, you'll find a list of the projects included in this showcase. Click on th
 
 - **Technologies**: HTML, CSS, JavaScript
 
-- **[Demo](/Project1/index.html)**
+- **[Demo](https://js25.netlify.app/project1/)**
 
 ### Project 2: Text To Speech Converter
 
@@ -21,7 +21,7 @@ Below, you'll find a list of the projects included in this showcase. Click on th
 
 - **Technologies**: HTML, CSS, JavaScript
 
-- **[Demo](/Project2/index.html)**
+- **[Demo](https://js25.netlify.app/project2/)**
 
 ### Project 3: Notifications App
 
@@ -29,7 +29,7 @@ Below, you'll find a list of the projects included in this showcase. Click on th
 
 - **Technologies**: HTML, CSS, JavaScript
 
-- **[Demo](/Project3/index.html)**
+- **[Demo](https://js25.netlify.app/project3/)**
 
 ### Project 4: Modal | Popup App
 
@@ -37,7 +37,7 @@ Below, you'll find a list of the projects included in this showcase. Click on th
 
 - **Technologies**: HTML, CSS, JavaScript
 
-- **[Demo](/Project4/index.html)**
+- **[Demo](https://js25.netlify.app/project4/)**
 
 ### Project 5: Drag & Drop App
 
@@ -45,7 +45,7 @@ Below, you'll find a list of the projects included in this showcase. Click on th
 
 - **Technologies**: HTML, CSS, JavaScript
 
-- **[Demo](/Project5/index.html)**
+- **[Demo](https://js25.netlify.app/project5/)**
 
 
 ## Feedback and Contributions
