@@ -6,7 +6,7 @@
 }
 
 body {
-  background-color: #252525;
+  background-color: #f8f8f8;
 }
 .app {
   background: rgb(255, 255, 255);
@@ -16,10 +16,11 @@ body {
   border-radius: 10px;
   padding: 30px;
   border: 0px solid rgb(177, 177, 177);
+  box-shadow: -1px 10px 20px 0px rgba(197, 208, 216, 0.2);
 }
 
 h1 {
-  color: #ffffff;
+  color: #001e4d;
   padding: 20px;
   text-align: center;
 }
@@ -50,8 +51,7 @@ h1 {
 }
 
 .btn:hover:not(:disabled) {
-  background-color: #222;
-  color: #fff;
+  background-color: #cccccc;
 }
 
 .btn:disabled {
@@ -77,4 +77,10 @@ h1 {
 
 .incorrect {
   background-color: #ff9393;
+}
+
+#timer {
+  margin: 10px;
+  text-align: center;
+  display: none;
 }
