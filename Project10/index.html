@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Random Notifications</title>
+    <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1 style="text-align: center; margin: 10px">Random Notifications</h1>
+    <p style="text-align: center; margin: 10px">
+      This app will show you notifications after random time interval and with
+      random names.
+    </p>
+
+    <div id="notificationBox"></div>
+    <script>
+      let notificationBox = document.querySelector("#notificationBox");
+      const names = [
+        "Aarav Patel",
+        "Aarushi Deshmukh",
+        "Advik Reddy",
+        "Aditi Singh",
+        "Aishwarya Choudhury",
+        "Akshay Kumar",
+        "Ananya Iyer",
+        "Arjun Gupta",
+        "Ayush Sharma",
+        "Dia Mehra",
+        "Harshita Shah",
+        "Ishaan Rana",
+        "Kavya Malhotra",
+        "Krish Agarwal",
+        "Mahi Khanna",
+        "Mira Patel",
+        "Neha Dubey",
+        "Rahul Joshi",
+        "Ria Sharma",
+        "Rohan Singh",
+        "Saanvi Kapoor",
+        "Sahil Bhatia",
+        "Samaira Verma",
+        "Sanya Rajput",
+        "Shaurya Mishra",
+        "Shivansh Jain",
+        "Shreya Khurana",
+        "Tanvi Sharma",
+        "Vihaan Singh",
+        "Zoya Thakur",
+        "Anushka Banerjee",
+        "Aryan Patil",
+        "Dia Chopra",
+        "Ishita Goyal",
+        "Kabir Singh",
+        "Krisha Gupta",
+        "Kriti Mehra",
+        "Kunal Sharma",
+        "Mohit Patel",
+        "Muskan Kumar",
+        "Prisha Malhotra",
+        "Reyansh Singh",
+        "Riya Patel",
+        "Rohan Mehra",
+        "Sahana Reddy",
+        "Samarth Patel",
+        "Suhana Gupta",
+        "Tanish Sharma",
+        "Vivaan Singh",
+        "Yashvi Choudhury",
+      ];
+
+      // Retrieve the last displayed index from localStorage or set it to 0 if not found
+      let lastIndex = parseInt(localStorage.getItem("lastIndex")) || 0;
+
+      function selectName() {
+        // Increment the index and reset to 0 if it exceeds the length of the array
+        if (lastIndex >= names.length) {
+          lastIndex = 0;
+        }
+        // Save the updated index to localStorage
+        localStorage.setItem("lastIndex", lastIndex + 1);
+        return names[lastIndex++];
+      }
+
+      function showNotification(message) {
+        let notification = document.createElement("div");
+        notification.classList.add("notification");
+        notification.innerHTML = message;
+        notificationBox.appendChild(notification);
+      }
+
+      function generateRandomNotification() {
+        let randomTime = Math.floor(Math.random() * 10) + 1; // Generate a random time between 1 to 10 seconds
+        setTimeout(() => {
+          showNotification("🔔 " + selectName() + " just purchased the book");
+          setTimeout(() => {
+            notificationBox.removeChild(notificationBox.firstChild); // Remove the notification after it's displayed for 2 seconds
+          }, 2000);
+          generateRandomNotification(); // Call the function again after showing the notification
+        }, randomTime * 1000);
+      }
+
+      generateRandomNotification(); // Initial call to start the process
+    </script>
+  </body>
+</html>
