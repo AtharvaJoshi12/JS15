@@ -1,7 +1,7 @@
-# JS25
-JS25 is a Challenge in which I will create 25 Unique JavaScript Mini projects.
+# JS15
+JS15 is a Challenge in which I will create 15 Unique JavaScript Mini projects.
 
-Welcome to my JavaScript Mini Projects Showcase! This website is dedicated to hosting a collection of 25 unique JavaScript mini projects that I've created as part of the JS25 challenge. Each project is designed to enhance my JavaScript skills and showcase a specific aspect of web development.
+Welcome to my JavaScript Mini Projects Showcase! This website is dedicated to hosting a collection of 25 unique JavaScript mini projects that I've created as part of the JS15 challenge. Each project is designed to enhance my JavaScript skills and showcase a specific aspect of web development.
 
 ## Projects
 
