@@ -1,7 +1,7 @@
 # JS15
 JS15 is a Challenge in which I will create 15 Unique JavaScript Mini projects.
 
-Welcome to my JavaScript Mini Projects Showcase! This website is dedicated to hosting a collection of 25 unique JavaScript mini projects that I've created as part of the JS15 challenge. Each project is designed to enhance my JavaScript skills and showcase a specific aspect of web development.
+Welcome to my JavaScript Mini Projects Showcase! This website is dedicated to hosting a collection of 15 unique JavaScript mini projects that I've created as part of the JS15 challenge. Each project is designed to enhance my JavaScript skills and showcase a specific aspect of web development.
 
 ## Projects
 
@@ -13,7 +13,7 @@ Below, you'll find a list of the projects included in this showcase. Click on th
 
 - **Technologies**: HTML, CSS, JavaScript
 
-- **[Demo](https://js25.netlify.app/project1/)**
+- **[Demo](https://js15.netlify.app/project1/)**
 
 ### Project 2: Text To Speech Converter
 
@@ -21,7 +21,7 @@ Below, you'll find a list of the projects included in this showcase. Click on th
 
 - **Technologies**: HTML, CSS, JavaScript
 
-- **[Demo](https://js25.netlify.app/project2/)**
+- **[Demo](https://js15.netlify.app/project2/)**
 
 ### Project 3: Notifications App
 
@@ -29,7 +29,7 @@ Below, you'll find a list of the projects included in this showcase. Click on th
 
 - **Technologies**: HTML, CSS, JavaScript
 
-- **[Demo](https://js25.netlify.app/project3/)**
+- **[Demo](https://js15.netlify.app/project3/)**
 
 ### Project 4: Modal | Popup App
 
@@ -37,7 +37,7 @@ Below, you'll find a list of the projects included in this showcase. Click on th
 
 - **Technologies**: HTML, CSS, JavaScript
 
-- **[Demo](https://js25.netlify.app/project4/)**
+- **[Demo](https://js15.netlify.app/project4/)**
 
 ### Project 5: Drag & Drop App
 
@@ -45,7 +45,7 @@ Below, you'll find a list of the projects included in this showcase. Click on th
 
 - **Technologies**: HTML, CSS, JavaScript
 
-- **[Demo](https://js25.netlify.app/project5/)**
+- **[Demo](https://js15.netlify.app/project5/)**
 
 
 ## Feedback and Contributions
